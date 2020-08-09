@@ -14,3 +14,12 @@ echo $computationResult3
 
 computationResult4=$(($a % $b + $c))
 echo $computationResult4
+
+declare -A computationDict
+
+computationDict[0]=$computationResult1
+computationDict[1]=$computationResult2
+computationDict[2]=$computationResult3
+computationDict[3]=$computationResult4
+
+echo ${computationDict[@]}
