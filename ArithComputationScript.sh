@@ -11,3 +11,6 @@ echo $computationResult2
 
 computationResult3=$(($c + $a / $b))
 echo $computationResult3
+
+computationResult4=$(($a % $b + $c))
+echo $computationResult4
