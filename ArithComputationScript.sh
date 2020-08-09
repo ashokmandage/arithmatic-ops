@@ -23,3 +23,12 @@ computationDict[2]=$computationResult3
 computationDict[3]=$computationResult4
 
 echo ${computationDict[@]}
+
+declare -a resultArray
+
+for (( i=0;i<=${#computationDict[@]};i++))
+do
+resultArray[$i]=${computationDict[$i]}
+done
+
+echo ${resultArray[@]}
