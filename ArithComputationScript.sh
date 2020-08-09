@@ -8,3 +8,6 @@ echo $computationResult1
 
 computationResult2=$(($a * $b + $c))
 echo $computationResult2
+
+computationResult3=$(($c + $a / $b))
+echo $computationResult3
